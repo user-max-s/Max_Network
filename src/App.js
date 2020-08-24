@@ -10,11 +10,11 @@ const App = () => {
       <div className="container">
         <nav className="nav">
           <ul className="menu">
-            <li className="menu__item">Profile</li>
-            <li className="menu__item">Messages</li>
-            <li className="menu__item">News</li>
-            <li className="menu__item">Music</li>
-            <li className="menu__item">Settings</li>
+            <li><a className="menu__item">Profile</a></li>
+            <li><a className="menu__item">Messages</a></li>
+            <li><a className="menu__item">News</a></li>
+            <li><a className="menu__item">Music</a></li>
+            <li><a className="menu__item">Settings</a></li>
           </ul>
         </nav>
         <main className="main">
