@@ -1,4 +1,6 @@
 import React from 'react';
+import Post from './Post/Post';
+import './Posts.scss';
 
 const Posts = (props) => {
     return (
@@ -8,10 +10,7 @@ const Posts = (props) => {
                 <textarea></textarea>
                 <button>Send</button>
             </div>
-            <div className="post">
-                <img src="" />
-                <p>Hey why nobody love me?</p>
-            </div>
+            <Post />
         </div>
     )
 }

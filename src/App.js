@@ -7,11 +7,11 @@ import './App.scss';
 const App = (props) => {
   return (
     <div className="app-wrapper">
-        <Header />
-        <div className="app-container">
-          <Navbar />
-          <Main />
-        </div>
+      <Header />
+      <div className="app-container">
+        <Navbar />
+        <Main />
+      </div>
     </div>
   )
 }
