@@ -11,6 +11,9 @@ const Posts = (props) => {
                 <button>Send</button>
             </div>
             <Post />
+            <Post />
+            <Post />
+            <Post />
         </div>
     )
 }
