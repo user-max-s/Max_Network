@@ -1,14 +1,14 @@
 import React from 'react';
-import Header from './components/Header';
-import Navbar from './components/Navbar';
-import Main from './components/Main';
+import Header from './components/Header/Header';
+import Navbar from './components/Navbar/Navbar';
+import Main from './components/Main/Main';
 import './App.scss';
 
-const App = () => {
+const App = (props) => {
   return (
-    <div className="wrapper">
+    <div className="app-wrapper">
         <Header />
-        <div className="container">
+        <div className="app-container">
           <Navbar />
           <Main />
         </div>
