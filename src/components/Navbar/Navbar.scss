@@ -9,11 +9,10 @@
             color: #000;
             font-size: 24px;
             padding: 6px;
-            transition: all linear .3s;
+            transition: all linear .1s;
         }
         &__item:hover {
-            background-color: #fff;
-            border-radius: 6px;
+            color: #fff;
         }
     }
 }
