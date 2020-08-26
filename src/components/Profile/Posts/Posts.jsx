@@ -8,12 +8,10 @@ const Posts = (props) => {
             <div className="post-add">
                 <h2>My posts</h2>
                 <textarea placeholder="Your text"></textarea>
-                <button type="button">Add post</button>
+                <button className="btn" type="button">Add post</button>
             </div>
-            <Post />
-            <Post />
-            <Post />
-            <Post />
+            <Post message='Hello how are you?' />
+            <Post message='It is my first post' />
         </div>
     )
 }

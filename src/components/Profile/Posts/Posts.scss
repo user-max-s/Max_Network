@@ -15,7 +15,7 @@
             margin-top: 8px;
         }
 
-        button {
+        .btn {
             background-color: green;
             color: #fff;
             margin-bottom: 10px;
@@ -25,8 +25,9 @@
             border-radius: 4px;
         }
 
-        button:focus {
+        .btn:focus {
             outline: none;
         }
+
     }
 }

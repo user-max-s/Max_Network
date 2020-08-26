@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
-import Content from './components/Content/Content';
+import Profile from './components/Profile/Profile';
 import './App.scss';
 
 const App = (props) => {
@@ -11,7 +11,7 @@ const App = (props) => {
         <Header />
         <div className="flex-container">
           <Navbar />
-          <Content />
+          <Profile />
         </div>
       </div>
     </div>
