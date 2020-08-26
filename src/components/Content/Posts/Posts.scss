@@ -1,0 +1,32 @@
+.posts {
+    padding: 10px;
+
+    .post-add {
+        h2 {
+            font-size: 22px;
+            font-weight: 550;
+        }
+        
+        textarea {
+            display: block;
+            width: 400px;
+            height: 68px;
+            resize: none;
+            margin-top: 8px;
+        }
+
+        button {
+            background-color: green;
+            color: #fff;
+            margin-bottom: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            padding: 6px;
+            border-radius: 4px;
+        }
+
+        button:focus {
+            outline: none;
+        }
+    }
+}

@@ -4,11 +4,11 @@ import './Posts.scss';
 
 const Posts = (props) => {
     return (
-        <div className="main__posts">
-            <div className="add-post">
+        <div className="posts">
+            <div className="post-add">
                 <h2>My posts</h2>
-                <textarea></textarea>
-                <button>Send</button>
+                <textarea placeholder="Your text"></textarea>
+                <button type="button">Add post</button>
             </div>
             <Post />
             <Post />

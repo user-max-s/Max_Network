@@ -1,9 +1,15 @@
 .nav {
     background-color: #FCCB36;
+    padding: 15px;
+
+    .menu {
+        &__item {
+            display: block;
+            text-decoration: none;
+            color: #000;
+            font-size: 24px;
+            margin: 6px;
+        }
+    }
 }
 
-.menu__item {
-    text-decoration: none;
-    color: #000;
-    font-size: 24px;
-}
