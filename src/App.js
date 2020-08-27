@@ -17,11 +17,16 @@ const App = (props) => {
           <Header />
           <div className="flex-container">
             <Navbar />
-            <Route path='/profile' component={Profile} />
-            <Route path='/dialogs' component={Dialogs} />
-            <Route path='/news' component={News} />
+            <Route path='/profile'
+              render={() => <Profile
+                posts={props.appState.profilePage.posts} />} />
+            <Route path='/dialogs'
+              render={() => <Dialogs
+                dialogsPage={props.appState.dialogsPage}
+                dialogsPage={props.appState.dialogsPage} />} />
+            {/* <Route path='/news' component={News} />
             <Route path='/music' component={Music} />
-            <Route path='/settings' component={Settings} />
+            <Route path='/settings' component={Settings} /> */}
           </div>
         </div>
       </div>

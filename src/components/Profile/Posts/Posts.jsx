@@ -3,12 +3,7 @@ import Post from './Post/Post';
 import './Posts.scss';
 
 const Posts = (props) => {
-    let posts = [
-        { id: 1, message: "Hello how are you?" },
-        { id: 2, message: "It is my first post" },
-    ]
-
-    let postElements = posts
+    let postElements = props.posts
         .map(p => <Post id={p.id} message={p.message} />)
 
     return (
