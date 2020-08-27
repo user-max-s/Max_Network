@@ -1,3 +1,22 @@
-.test {
-    background-color: green;
+.dialogs_container {
+    background-color: #C5D0E6;
+    display: flex;
+    width: 100%;
 }
+
+.dialogs {
+    margin: 10px;
+}
+
+.messages {
+    margin: 10px;
+}
+
+.dialog {
+    margin: 6px;
+}
+
+.message {
+    margin: 6px;
+}
+

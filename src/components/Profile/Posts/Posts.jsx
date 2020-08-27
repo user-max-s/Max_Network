@@ -3,6 +3,14 @@ import Post from './Post/Post';
 import './Posts.scss';
 
 const Posts = (props) => {
+    let posts = [
+        { id: 1, message: "Hello how are you?" },
+        { id: 2, message: "It is my first post" },
+    ]
+
+    let postElements = posts
+        .map(p => <Post id={p.id} message={p.message} />)
+
     return (
         <div className="posts">
             <div className="post-add">
@@ -10,8 +18,7 @@ const Posts = (props) => {
                 <textarea placeholder="Your text"></textarea>
                 <button className="btn" type="button">Add post</button>
             </div>
-            <Post message='Hello how are you?' />
-            <Post message='It is my first post' />
+            {postElements}
         </div>
     )
 }

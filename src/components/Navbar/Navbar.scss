@@ -1,19 +1,24 @@
 .nav {
     background-color: #FCCB36;
     padding: 15px;
+}
 
-    .menu {
-        &__item {
-            display: block;
-            text-decoration: none;
-            color: #000;
-            font-size: 24px;
-            padding: 6px;
-            transition: all linear .1s;
-        }
-        &__item:hover {
-            color: #fff;
-        }
+.menu {
+    &__item {
+        display: block;
+        text-decoration: none;
+        color: #000;
+        font-size: 24px;
+        padding: 6px;
+        transition: all linear .1s;
+    }
+
+    &__item.active {
+        color: #fff;
+    }
+
+    &__item:hover {
+        color: #fff;
     }
 }
 
