@@ -1,33 +1,36 @@
 .posts {
-    padding: 10px;
+  padding: 10px;
 
-    .post-add {
-        h2 {
-            font-size: 22px;
-            font-weight: 550;
-        }
-        
-        textarea {
-            display: block;
-            width: 400px;
-            height: 68px;
-            resize: none;
-            margin-top: 8px;
-        }
-
-        .btn {
-            background-color: green;
-            color: #fff;
-            margin-bottom: 10px;
-            font-size: 16px;
-            cursor: pointer;
-            padding: 6px;
-            border-radius: 4px;
-        }
-
-        .btn:focus {
-            outline: none;
-        }
-
+  .post-add {
+    h2 {
+      font-size: 22px;
+      font-weight: 550;
     }
+
+    .textarea {
+      display: block;
+      width: 400px;
+      height: 68px;
+      resize: none;
+      margin-top: 8px;
+    }
+
+    .btn {
+      background-color: green;
+      color: #fff;
+      margin-bottom: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      padding: 6px;
+      border: none;
+      border-radius: 4px;
+      outline: none; 
+      box-shadow: 1px 1px 2px #000;
+      transition: box-shadow .2s linear;
+    }
+
+    .btn:active {
+        box-shadow: none;
+    }
+  }
 }

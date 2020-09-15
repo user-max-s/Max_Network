@@ -1,9 +1,8 @@
-import React from 'react';
-// import './Dialogs.scss';
+import React from "react";
+import "./Message.scss";
 
 const Message = (props) => {
-    return (
-        <div className="message">{props.message}</div>)
-}
+  return <div className="message">{props.message}</div>;
+};
 
 export default Message;

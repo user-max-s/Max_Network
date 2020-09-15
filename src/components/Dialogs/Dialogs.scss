@@ -1,22 +1,32 @@
 .dialogs_container {
-    background-color: #C5D0E6;
-    display: flex;
-    width: 100%;
+  background-color: #c5d0e6;
+  display: flex;
+  width: 100%;
+  padding: 14px;
 }
 
 .dialogs {
-    margin: 10px;
+  margin-right: 10px;
 }
 
 .messages {
-    margin: 10px;
-}
+  margin: 18px 0 0 10px;
 
-.dialog {
-    margin: 6px;
-}
+  &__textarea {
+    margin-top: 10px;
+    display: block;
+    width: 300px;
+    height: 60px;
+    resize: none;
+  }
 
-.message {
-    margin: 6px;
+  &__btn {
+    font-size: 16px;
+    padding: 4px;
+    cursor: pointer;
+    background-color: blanchedalmond;
+    border: 1px solid black;
+    border-radius: 6px;
+    outline: none;
+  }
 }
-
