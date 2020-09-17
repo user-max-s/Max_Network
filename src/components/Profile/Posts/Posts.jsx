@@ -3,7 +3,7 @@ import Post from "./Post/Post";
 import "./Posts.scss";
 
 const Posts = (props) => {
-  let postElements = props.posts.map((p) => (
+  let postElements = props.profilePage.posts.map((p) => (
     <Post id={p.id} message={p.message} />
   ));
 
@@ -26,7 +26,7 @@ const Posts = (props) => {
           className="textarea"
           ref={newPostElement}
           onChange={onPostChange}
-          value={props.newPostText}
+          value={props.profilePage.newPostText}
         />
         <button className="btn" type="button" onClick={onAddPost}>
           Add post
