@@ -2,16 +2,16 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.scss";
 import * as serviceWorker from "./serviceWorker";
-import store from "./redux/state";
+import store from "./redux/redux-store";
 import App from "./App";
+import { Provider } from "./StoreContext";
 
 const rerenderEntireTree = () => {
   ReactDOM.render(
     <React.StrictMode>
-      <App
-        appState={store.getState()}
-        dispatch={store.dispatch.bind(store)}
-      />
+      <Provider store={store}>
+        <App />
+      </Provider>
     </React.StrictMode>,
     document.getElementById("root")
   );
@@ -20,5 +20,10 @@ const rerenderEntireTree = () => {
 rerenderEntireTree(store.getState());
 
 store.subscribe(rerenderEntireTree);
+
+// store.subscribe(() => {
+//   let state = store.getState();
+//   rerenderEntireTree(state);
+// });
 
 serviceWorker.unregister();
